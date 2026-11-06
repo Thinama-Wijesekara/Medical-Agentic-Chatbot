@@ -25,6 +25,8 @@ class Settings(BaseSettings):
     tavily_api_key: str = ''
     pinecone_index: str = 'medical-agent-demo'
     api_token: str = ''
+    azure_whisper_deployment: str = 'whisper'
+    azure_tts_deployment: str = 'tts'
     allowed_origins: str = 'http://localhost:8000,http://127.0.0.1:8000'
     model_config = SettingsConfigDict(env_file='.env', extra='ignore')
 
